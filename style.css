@@ -1,0 +1,37 @@
+body, html {
+	font-family: 'Roboto Condensed', sans-serif;
+	margin: 0;
+	font-size: 20px;
+}
+header {
+	display: block;
+	width: 100%;
+}
+.hero-image {
+	background-image: url("slika.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 500px;
+}
+ul {
+	list-style-type: 'Grechen Fuemen', sans-serif;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+li {
+	float: left;
+}
+li a {
+	display: block;
+	color: blue;
+	text-align: center;
+	padding: 20px 20px;
+	text-decoration: none;
+}
+li a:hover {
+	background-color: #111;
+}
