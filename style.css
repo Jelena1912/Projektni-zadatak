@@ -15,6 +15,10 @@ header {
 	position: relative;
 	height: 500px;
 }
+.zaglavlje {
+	height: 200px;
+
+}
 ul {
 	list-style-type: 'Grechen Fuemen', sans-serif;
 	margin: 0;
@@ -38,11 +42,17 @@ li a:hover {
 h1,h2 {
 	margin: 0.5em;
 	font-size: 2em;
+	color: darkblue;
 
 }
 h2 {
 	font-size: 1.5em;
 	color: #27318b;
+}
+
+.gauss{
+	height: 500px;
+	width: 400px;
 }
 main a {
 	color: #27318b;
@@ -58,12 +68,23 @@ p {
 	letter-spacing: 1px;
 }
 hr {
-	margin: 1em;
-	border: 1px dotted #27318b;
-	clear: both;
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+figure:hover >figcaption {
+	visibility: visible;
+}
+
+figure > figcaption {
+	position: center;
+	visibility: hidden;
+	z-index: 2;
+	transition: all ease-in-out .2s;
 }
 figure {
-	padding: 0.5em;
+	padding: 0.5%;
 	margin: 0 1em 0.1em 0.5em;
 	float: left;
 	width: 35%;
@@ -71,7 +92,6 @@ figure {
 	color: darkblue;
 	border-radius: 5%;
 	box-shadow: 0 4px 16px 0 rgb(30, 60, 80, 0.5);
-
 }
 
 figcaption {
