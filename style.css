@@ -73,11 +73,11 @@ hr {
 	background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
 }
 
-figure:hover >figcaption {
+figure:hover >legend {
 	visibility: visible;
 }
 
-figure > figcaption {
+figure > legend {
 	position: center;
 	visibility: hidden;
 	z-index: 2;
@@ -94,11 +94,16 @@ figure {
 	box-shadow: 0 4px 16px 0 rgb(30, 60, 80, 0.5);
 }
 
-figcaption {
+
+legend {
 	font-size: 80%;
 }
 img {
 	width: 100%;
+
+}
+
+.vijesti{
 
 }
 footer {
@@ -120,14 +125,22 @@ footer img {
 		margin: 1em;
 	}
 	.news img {
-		width: 0.5%;
-		height: 50px;
+		width: 95%;
 		padding: 0.5em;
 		margin: 0 1em 0.5em 0.5em;
-
 	}
 	.news time {
 		margin: 0 0 0 1em;
-		color: darkblue;
+	}
+	#news_gallery figure {
+		padding: 0.5em;
+		margin: 0 1em 0.5em 1em;
+		float: left;
+		width: 90%;
+		border: 1px solid black;
+	}
+	#news_gallery figcaption {
+		font-size: 90%;
+		text-align: center;
 	}
 }
